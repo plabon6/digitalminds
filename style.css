@@ -1,5 +1,6 @@
 :root{
     --clr-primary: #96BB7C;
+    --clr-primary-faded: #EFF8ED;
     --clr-secondary: #F3CD03;
     --clr-text: #252B42;
     --clr-second-text: #737373;
@@ -50,6 +51,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero{
     padding-top: 19px;
+    position: relative;
 }
 
 header{
@@ -250,4 +252,29 @@ nav > a:not(:last-child){
     border-radius: var(--br-normal);
     right: -60px;
     top: 80px;
+}
+
+.sm-rtg{
+    height: 200px;
+    width: 100px;
+    background-color: var(--clr-primary-faded);
+    border-radius: 0 0 20px 0;
+    position: absolute;
+    top: 0;
+}
+.lg-rtg{
+    height: 650px;
+    width: 935px;
+    background-color: var(--clr-primary-faded);
+    border-radius: 0 0 0 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1280px){
+    .lg-rtg{
+        width: 620px;
+    }
 }
