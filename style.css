@@ -44,11 +44,18 @@ h1, h2, h3, h4, h5, h6, p {
     margin: unset;
 }
 
+.width{
+    width: 1049px;
+}
+
+.hero{
+    padding-top: 19px;
+}
+
 header{
     display: flex;
     justify-content: space-between;
-    width: 1049px;
-    margin: 19px auto;
+    margin: 0 auto;
 }
 
 .left-hero{
@@ -113,4 +120,134 @@ nav > a:not(:last-child){
 
 .right-hero button:hover{
     background-color: var(--clr-text);
+}
+
+/* Container CSS Here */
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-container h5{
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+    font-size: var(--fs-small);
+}
+
+.left-container h1{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-xl);
+    color: var(--clr-text);
+    margin-bottom: 30px;
+}
+
+.left-container p{
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-medium);
+    color: var(--clr-second-text);
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.quote , .learn{
+    border: 1px solid var(--clr-primary);
+    padding: 15px 40px;
+    cursor: pointer;
+    font-weight: var(--fw-bold);
+    border-radius: var(--br-normal);
+}
+
+.quote{
+    color: var(--clr-light-text);
+    background-color: var(--clr-primary);
+    margin-right: 10px;
+}
+
+.learn{
+    background-color: var(--clr-light-text);
+    color: var(--clr-primary);
+}
+
+.quote:hover{
+    background-color: var(--clr-text);
+    border-color: var(--clr-text);
+}
+
+.learn:hover{
+    background-color: var(--clr-primary);
+    color: var(--clr-light-text);
+}
+
+.images{
+    position: relative;
+    height: 682px;
+    width: 500px;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.images i{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student{
+    background: url(Images/Ellipse\ 23.svg);
+    background-repeat: no-repeat;
+    background-position: 90px 50px;
+    -webkit-user-drag: none;
+    position: absolute;
+    right: -80px;
+}
+
+.static{
+    right: -20px;
+    bottom: 90px;
+    -webkit-user-drag: none;
+}
+
+.year{
+    left: -15px;
+    top: 70px;
+    -webkit-user-drag: none;
+}
+
+.score{
+    left: -20px;
+    bottom: 110px;
+    -webkit-user-drag: none;
+}
+
+.fa-chart-line, .fa-chart-column{
+    background-color: var(--clr-icon-blue);
+    color: var(--clr-light-text);
+    padding: 16px;
+    font-size: 26px;
+    border-radius: var(--br-normal);
+}
+
+.fa-chart-line{
+    left: -40px;
+    top: 290px;
+}
+
+.fa-chart-column{
+    bottom: 40px;
+    right: 150px;
+}
+
+.fa-calendar{
+    background-color: var(--clr-icon-green);
+    color: var(--clr-light-text);
+    padding: 14px;
+    border-radius: var(--br-normal);
+    right: -60px;
+    top: 80px;
 }
