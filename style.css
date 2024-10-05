@@ -273,6 +273,12 @@ nav > a:not(:last-child){
     z-index: -1;
 }
 
+@media only screen and (max-width: 1366px){
+    .lg-rtg{
+        width: 660px;
+    }
+}
+
 @media only screen and (max-width: 1280px){
     .lg-rtg{
         width: 620px;
