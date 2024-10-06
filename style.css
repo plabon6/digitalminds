@@ -389,6 +389,7 @@ nav > a:not(:last-child){
     position: relative;
     width: 380px;
     height: 405px;
+    margin-left: 100px;
 }
 
 .girl{
@@ -432,14 +433,17 @@ nav > a:not(:last-child){
     left: -120px;
 }
 
-.right-education{
-    width: 350px;
+.content{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.right-education hr{
+.right-education{
+    width: 350px;
+}
+
+.content hr{
     width: 94px;
     height: 7px;
     border: none;
@@ -447,14 +451,14 @@ nav > a:not(:last-child){
     margin-bottom: 35px;
 }
 
-.right-education h2{
+.content h2{
     font-weight: var(--fw-bold);
     font-size: var(--fs-x);
     color: var(--clr-text);
     margin-bottom: 35px;
 }
 
-.right-education p{
+.content p{
     color: var(--clr-second-text);
     font-size: var(--fs-light);
     font-weight: var(--fw-regular);
@@ -462,7 +466,7 @@ nav > a:not(:last-child){
     margin-bottom: 35px;
 }
 
-.right-education button{
+.content button{
     background-color: white;
     border: none;
     font-size: var(--fs-light);
@@ -470,6 +474,27 @@ nav > a:not(:last-child){
     color: var(--clr-primary);
     width: max-content;
     cursor: pointer;
+}
+
+/* Packages CSS Here */
+
+.packages{
+    margin: 50px auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-packages{
+    width: 450px;
+}
+
+.left-packages p{
+    width: 350px;
+}
+
+iframe{
+    border-radius: 15px;
 }
 
 @media only screen and (max-width: 2560px){
