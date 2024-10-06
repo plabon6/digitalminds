@@ -15,6 +15,7 @@
     --fs-small: 16px;
     --fs-medium: 20px;
     --fs-large: 24px;
+    --fs-x: 40px;
     --fs-xl: 58px;
     --fw-regular: 400;
     --fw-bold: 700;
@@ -235,7 +236,7 @@ nav > a:not(:last-child){
     border-radius: var(--br-normal);
 }
 
-.fa-chart-line{
+.line{
     left: -40px;
     top: 290px;
 }
@@ -271,6 +272,216 @@ nav > a:not(:last-child){
     top: 0;
     right: 0;
     z-index: -1;
+}
+
+/* Training Section CSS Here */
+
+.course{
+    margin: 100px auto 150px;
+}
+
+.top-course{
+    margin-bottom: 80px;
+}
+
+.top-course h5{
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+    font-size: var(--fs-small);
+}
+
+.top-course h2{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-x);
+    color: var(--clr-text);
+    margin-bottom: 10px;
+}
+
+.top-course p{
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-light);
+    color: var(--clr-second-text);
+}
+
+.bottom-course{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+}
+
+.card{
+    width: 165px;
+    padding: 35px;
+    box-shadow: 0 10px 15px #8080802f;
+    background-color: white;
+}
+
+.course-icon{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.card img{
+    position: absolute;
+    top:0;
+}
+
+.white-icon{
+    display: none;
+}
+
+.card h5{
+    font-weight: var(--fw-bold);
+    color: var(--clr-text);
+    font-size: var(--fs-small);
+    margin-bottom: 20px;
+}
+
+.card hr{
+    width: 50px;
+    height: 2.4px;
+    border: none;
+    background-color: var(--clr-danger);
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.card p{
+    color: var(--clr-second-text);
+    font-size: var(--fs-light);
+    font-weight: var(--fw-regular);
+    line-height: 20px;
+}
+
+.card:hover{
+    background-color: var(--clr-primary);
+    box-shadow: none;
+}
+
+.card:hover .blue-icon{
+    display: none;
+}
+
+.card:hover .white-icon{
+    display: block;
+}
+
+.card:hover h5,.card:hover p{
+    color: var(--clr-light-text);
+}
+.card:hover hr{
+    background-color: var(--clr-light-text);
+}
+
+/* Education CSS Starts Here */
+
+.education{
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 50px 0;
+}
+
+.left-education{
+    position: relative;
+    width: 380px;
+    height: 405px;
+}
+
+.girl{
+    background-image: url(Images/Ellipse\ 24.svg);
+    background-repeat: no-repeat;
+    background-position: 0 80px;
+}
+
+.global{
+    bottom: 0;
+    right: 0;
+    height: 120px;
+    overflow: hidden;
+}
+
+.global img{
+    width: 200px;
+}
+
+.rotate{
+    bottom: 50px;
+    left: -15px;
+    transform: rotate(-60deg);
+}
+
+.red-circle{
+    height: 12px;
+    width: 12px;
+    background-color: #fb762b;
+    border-radius: 50px;
+    bottom: 170px;
+    left: -25px;
+}
+
+.curve{
+    right: 30px;
+    top: 200px;
+}
+
+.calender{
+    left: -120px;
+}
+
+.right-education{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right-education hr{
+    width: 94px;
+    height: 7px;
+    border: none;
+    background-color: var(--clr-danger);
+    margin-bottom: 35px;
+}
+
+.right-education h2{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-x);
+    color: var(--clr-text);
+    margin-bottom: 35px;
+}
+
+.right-education p{
+    color: var(--clr-second-text);
+    font-size: var(--fs-light);
+    font-weight: var(--fw-regular);
+    line-height: 20px;
+    margin-bottom: 35px;
+}
+
+.right-education button{
+    background-color: white;
+    border: none;
+    font-size: var(--fs-light);
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+    width: max-content;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 2560px){
+    .lg-rtg{
+        width: 1260px;
+    }
+}
+
+@media only screen and (max-width: 1920px){
+    .lg-rtg{
+        width: 935px;
+    }
 }
 
 @media only screen and (max-width: 1366px){
