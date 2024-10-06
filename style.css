@@ -2,15 +2,19 @@
     --clr-primary: #96BB7C;
     --clr-primary-faded: #EFF8ED;
     --clr-secondary: #F3CD03;
+    --clr-dark-bg: #2D4059;
     --clr-text: #252B42;
+    --clr-mute: #BDBDBD;
     --clr-second-text: #737373;
     --clr-light-text: #fff;
     --clr-danger: #E74040;
+    --clr-second-2: #FFAB71;
     --clr-icon-blue: #0072F9;
     --clr-icon-green: #48eea3;
     --clr-success: #2DC071;
     --clr-pink: #FFF2F3;
     --font-primary: "Montserrat", sans-serif;
+    --fs-thin: 12px;
     --fs-light: 14px;
     --fs-small: 16px;
     --fs-medium: 20px;
@@ -497,6 +501,132 @@ iframe{
     border-radius: 15px;
 }
 
+/* Popular Courses CSS Here */
+
+.popular{
+    margin: 150px auto;
+}
+
+.cardLayout{
+    width: 238px;
+    height: 550px;
+    box-shadow: 0 10px 15px #8080802f;
+}
+
+.imgHolder{
+    height: 300px;
+    width: 239px;
+    position: relative;
+}
+
+.imgHolder span{
+    font-size: var(--fs-light);
+    font-weight: var(--fw-bold);
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: var(--clr-light-text);
+    background-color: var(--clr-danger);
+    top: 15px;
+    left: 15px;
+}
+
+.cardAction{
+    display: flex;
+    gap: 10px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cardAction i{
+    background-color: var(--clr-light-text);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.proDes{
+    padding: 20px;
+}
+
+.type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.type h5{
+    color: var(--clr-primary);
+    font-size: var(--fs-light);
+    font-weight: var(--fw-bold);
+}
+
+.rating{
+    color: var(--clr-light-text);
+    background-color: var(--clr-dark-bg);
+    font-size: var(--fs-thin);
+    padding: 4px;
+    border-radius: 50px;
+}
+
+.rating i{
+    color: var(--clr-secondary);
+    margin-right: 5px;
+}
+
+.proDes h4{
+    color: var(--clr-text);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-bold);
+    margin-bottom: 10px;
+}
+
+.proDes p{
+    color: var(--clr-second-text);
+    font-size: var(--fs-light);
+    font-weight: var(--fw-regular);
+    margin-bottom: 10px;
+}
+
+.sales{
+    color: var(--clr-second-text);
+    font-size: var(--fs-light);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.value{
+    display: flex;
+    gap: 5px;
+    color: var(--clr-mute);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-small);
+    margin-bottom: 10px;
+}
+
+.discount{
+    color: var(--clr-second-2);
+}
+
+.proDes button{
+    background-color: white;
+    border: 1px solid var(--clr-primary);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: var(--fs-light);
+    font-weight: var(--fw-bold);
+    color: var(--clr-primary);
+    width: max-content;
+    cursor: pointer;
+}
+
+.courseCard{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+}
+
+
 @media only screen and (max-width: 2560px){
     .lg-rtg{
         width: 1260px;
@@ -505,7 +635,7 @@ iframe{
 
 @media only screen and (max-width: 1920px){
     .lg-rtg{
-        width: 935px;
+        width: 900px;
     }
 }
 
