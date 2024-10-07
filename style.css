@@ -10,7 +10,9 @@
     --clr-danger: #E74040;
     --clr-second-2: #FFAB71;
     --clr-icon-blue: #0072F9;
+    --clr-disabled-blue: #8EC2F2;
     --clr-icon-green: #48eea3;
+    --clr-tick: #2dc071;
     --clr-success: #2DC071;
     --clr-pink: #FFF2F3;
     --font-primary: "Montserrat", sans-serif;
@@ -620,12 +622,127 @@ iframe{
     cursor: pointer;
 }
 
+.proDes button:hover{
+    background-color: var(--clr-primary);
+    color: var(--clr-light-text);
+}
+
 .courseCard{
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: space-between;
 }
 
+/* Expert Teachers Section CSS Here */
+
+.teacher{
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.package{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+}
+
+.packageCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    box-shadow: 0 10px 15px #8080802f;
+    padding: 40px;
+    background-color: var(--clr-light-text);
+}
+
+.bottomMargin{
+    margin-bottom: 35px;
+}
+
+.packageCard > i{
+    padding: 25px;
+    background-color: var(--clr-primary);
+    color: var(--clr-light-text);
+    font-size: 36px;
+    border-radius: 50%;
+}
+
+.packageCard h3{
+    font-size: var(--fs-large);
+    color: var(--clr-text);
+}
+
+.packageCard h2{
+    font-size: var(--fs-x);
+    color: var(--clr-primary);
+    font-weight: var(--fw-bold);
+}
+
+.packageCard h6{
+    font-weight: var(--fw-bold);
+    color: var(--clr-disabled-blue);
+    font-size: var(--fs-light);
+}
+
+.packageCard p{
+    text-align: center;
+    color: var(--clr-second-text);
+    font-size: var(--fs-light);
+    line-height: 20px;
+}
+
+.m-ft{
+    font-weight: var(--fw-bold);
+}
+
+.packageCard button{
+    width: 100%;
+    border: none;
+    background-color: var(--clr-primary);
+    color: var(--clr-light-text);
+    padding: 20px 0;
+    border-radius: var(--br-normal);
+    font-weight: var(--fw-bold);
+}
+
+.benefit{
+    width: 100%;
+}
+
+.benefitItems{
+    font-size: var(--fs-light);
+    font-weight: var(--fw-bold);
+    color: var(--clr-text);
+}
+
+.fa-circle-check{
+    font-size: 30px;
+    color: var(--clr-tick);
+    margin-right: 10px;
+}
+
+.benefitItems{
+    display: flex;
+    align-items: center;
+}
+
+.benefitItems:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.bg-blue{
+    background-color: var(--clr-dark-bg);
+    margin-bottom: 20px;
+}
+
+.bg-blue h3, .bg-blue p, .bg-blue .benefitItems{
+    color: var(--clr-light-text);
+}
+
+.uncheck{
+    color: var(--clr-mute);
+}
 
 @media only screen and (max-width: 2560px){
     .lg-rtg{
