@@ -9,6 +9,7 @@
     --clr-light-text: #fff;
     --clr-danger: #E74040;
     --clr-second-2: #FFAB71;
+    --clr-orange: #e67c40;
     --clr-icon-blue: #0072F9;
     --clr-disabled-blue: #8EC2F2;
     --clr-icon-green: #48eea3;
@@ -27,6 +28,7 @@
     --fw-bold: 700;
     --br-normal: 5px;
     --br-full: 50px;
+    --badge: 50px;
 }
 
 *{
@@ -652,7 +654,7 @@ iframe{
     align-items: center;
     width: 250px;
     box-shadow: 0 10px 15px #8080802f;
-    padding: 40px;
+    padding: 35px;
     background-color: var(--clr-light-text);
 }
 
@@ -734,6 +736,7 @@ iframe{
 .bg-blue{
     background-color: var(--clr-dark-bg);
     margin-bottom: 20px;
+    position: relative;
 }
 
 .bg-blue h3, .bg-blue p, .bg-blue .benefitItems{
@@ -742,6 +745,23 @@ iframe{
 
 .uncheck{
     color: var(--clr-mute);
+}
+
+.new{
+    background-color: var(--clr-orange);
+    color: var(--clr-light-text);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-small);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--badge);
+    width: var(--badge);
+    border-radius: var(--br-full);
+    position: absolute;
+    top: calc((var(--badge)*-1)/2);
+    right: calc((var(--badge)*-1)/2);
+    padding: 10px;
 }
 
 @media only screen and (max-width: 2560px){
