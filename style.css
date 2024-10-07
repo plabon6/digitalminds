@@ -764,6 +764,123 @@ iframe{
     padding: 10px;
 }
 
+/* Testimonials CSS Starts Here */
+
+.testimonials{
+    margin: 100px auto;
+    padding: 50px 0;
+}
+
+.allTestimonials{
+    display: flex;
+    justify-content: space-around;
+}
+
+.testItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testItems img{
+    width: 128px;
+    border-radius: 50%;
+}
+
+.testItems p{
+    text-align: center;
+    color: var(--clr-second-text);
+    font-size: var(--fs-light);
+    margin-bottom: 15px;
+}
+
+.testItems h5{
+    font-size: var(--fs-small);
+    color: var(--clr-text);
+    margin-bottom: 5px;
+}
+
+.testItems h6{
+    color: var(--clr-second-text);
+    font-size: var(--fs-light);
+}
+
+.review{
+    color: var(--clr-secondary);
+    margin-bottom: 15px;
+}
+
+/* Subscribe CSS Starts Here */
+
+.subscribe{
+    background-color: var(--clr-pink);
+    padding: 150px 0;
+}
+
+.subContainer{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subContainer h6{
+    color: var(--clr-primary);
+    font-size: var(--fs-light);
+    margin-bottom: 10px;
+}
+
+.subContainer h2{
+    color: var(--clr-text);
+    font-size: var(--fs-x);
+    margin-bottom: 10px;
+}
+
+.subContainer p{
+    color: var(--clr-second-text);
+    text-align: center;
+    font-weight: var(--fs-light);
+}
+
+.form{
+    display: flex;
+    margin-top: 80px;
+    width: 688px;
+    height: 53px;
+    align-items: center;
+}
+
+.input{
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-light-text);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: var(--br-normal) 0 0 var(--br-normal);
+    border: 1px solid var(--clr-primary-faded);
+}
+
+.input input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.input input::placeholder{
+    font-weight: var(--fw-bold);
+    color: var(--clr-mute);
+}
+
+.form button{
+    border: 1px solid var(--clr-primary);
+    background-color: var(--clr-primary);
+    color: var(--clr-light-text);
+    padding: 0 20px;
+    border-radius: 0 var(--br-normal) var(--br-normal) 0;
+    height: 100%;
+}
+
 @media only screen and (max-width: 2560px){
     .lg-rtg{
         width: 1260px;
