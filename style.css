@@ -208,9 +208,6 @@ nav > a:not(:last-child){
 
 .images i{
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .student{
@@ -986,6 +983,10 @@ footer a{
         width: 400px;
     }
 
+    .mb-d-n{
+        display: none;
+    }
+
     /* Header Mobile Responsive CSS */
 
     header{
@@ -1021,66 +1022,50 @@ footer a{
 
     
     .container{
+        margin-top: 50px;
         flex-direction: column-reverse;
     }
 
     .images{
         width: 400px;
+        height: 500px;
     }
 
     .student{
         background: url(Images/Ellipse\ 23.svg);
-        background-position: 60px 50px;
+        background-position: 55px 35px;
         background-repeat: no-repeat;
-        background-size: 350px;
+        background-size: 300px;
         left: 0px;
-        height: 500px;
+        width: 370px;
     }
     
     .static{
-        right: -20px;
-        bottom: 90px;
+        right: 60px;
+        top: 250px;
+        width: 150px;
         -webkit-user-drag: none;
     }
     
     .year{
-        left: -15px;
-        top: 70px;
-        -webkit-user-drag: none;
+        display: none;
     }
     
     .score{
-        left: -20px;
-        bottom: 110px;
-        -webkit-user-drag: none;
-    }
-    
-    .fa-chart-line, .fa-chart-column{
-        background-color: var(--clr-icon-blue);
-        color: var(--clr-light-text);
-        padding: 16px;
-        font-size: 26px;
-        border-radius: var(--br-normal);
+        display: none;
     }
     
     .line{
-        left: -40px;
-        top: 290px;
-    }
-    
-    .fa-chart-column{
-        bottom: 40px;
-        right: 150px;
+        left: 20px;
+        top: 400px;
     }
     
     .fa-calendar{
-        background-color: var(--clr-icon-green);
-        color: var(--clr-light-text);
-        padding: 14px;
-        border-radius: var(--br-normal);
-        right: -60px;
-        top: 80px;
+        padding: 10px;
+        top: 45px;
+        right: 25px;
     }
+
 
     /* Training Section Responsive CSS */
 
@@ -1094,10 +1079,29 @@ footer a{
         flex-direction: column-reverse;
     }
 
+    .left-education{
+        margin-left: 0;
+    }
+
+    .girl{
+        left: 0;
+        width: 400;
+    }
+
     /* Packages Responsive CSS */
 
     .packages{
         flex-direction: column;
+    }
+
+    .left-packages{
+        width: auto;
+    }
+
+    iframe{
+        margin-top: 50px;
+        width: 400px;
+        height: 220px;
     }
 
     /* Popular Course Responsive CSS */
