@@ -133,6 +133,10 @@ nav > a:not(:last-child){
     background-color: var(--clr-text);
 }
 
+.mbMenu{
+    display: none;
+}
+
 /* Container CSS Here */
 
 .container{
@@ -644,7 +648,7 @@ iframe{
 
 .package{
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     justify-content: space-between;
 }
 
@@ -921,6 +925,8 @@ footer a{
     padding-bottom: 25px;
 }
 
+/* Cpyright Section CSS Here */
+
 .copyright{
     background-color: #FAFAFA;
 }
@@ -972,5 +978,170 @@ footer a{
 @media only screen and (max-width: 1280px){
     .lg-rtg{
         width: 620px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .width{
+        width: 400px;
+    }
+
+    /* Header Mobile Responsive CSS */
+
+    header{
+        align-items: center;
+    }
+
+    .logo{
+        margin-right: 0;
+        font-size: 30px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .right-hero a{
+        display: none;
+    }
+
+    .sm-rtg , .lg-rtg{
+        display: none;
+    }
+
+    .right-hero button{
+        padding: 10px 15px;
+    }
+
+    /* Container Image CSS Responsive */
+
+    
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .images{
+        width: 400px;
+    }
+
+    .student{
+        background: url(Images/Ellipse\ 23.svg);
+        background-position: 60px 50px;
+        background-repeat: no-repeat;
+        background-size: 350px;
+        left: 0px;
+        height: 500px;
+    }
+    
+    .static{
+        right: -20px;
+        bottom: 90px;
+        -webkit-user-drag: none;
+    }
+    
+    .year{
+        left: -15px;
+        top: 70px;
+        -webkit-user-drag: none;
+    }
+    
+    .score{
+        left: -20px;
+        bottom: 110px;
+        -webkit-user-drag: none;
+    }
+    
+    .fa-chart-line, .fa-chart-column{
+        background-color: var(--clr-icon-blue);
+        color: var(--clr-light-text);
+        padding: 16px;
+        font-size: 26px;
+        border-radius: var(--br-normal);
+    }
+    
+    .line{
+        left: -40px;
+        top: 290px;
+    }
+    
+    .fa-chart-column{
+        bottom: 40px;
+        right: 150px;
+    }
+    
+    .fa-calendar{
+        background-color: var(--clr-icon-green);
+        color: var(--clr-light-text);
+        padding: 14px;
+        border-radius: var(--br-normal);
+        right: -60px;
+        top: 80px;
+    }
+
+    /* Training Section Responsive CSS */
+
+    .bottom-course{
+        grid-template-columns: auto;
+    }
+
+    /* Education Responsive CSS */
+
+    .education{
+        flex-direction: column-reverse;
+    }
+
+    /* Packages Responsive CSS */
+
+    .packages{
+        flex-direction: column;
+    }
+
+    /* Popular Course Responsive CSS */
+
+    .courseCard{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    /* Expert Teachers Responsive CSS */
+
+    .package{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    /* Subscribe Responsive CSS */
+
+    .subContainer h2{
+        color: var(--clr-text);
+        font-size: var(--fs-large);
+        text-align: center;
+    }
+    
+
+    .form{
+        width: 350px;
+    }
+
+    /* Footer Responsive CSS */
+
+    .topFooter{
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+    }
+
+    /* Copyright Section Responsive CSS */
+
+    .bottomFooter{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        color: var(--clr-second-text);
+        font-size: var(--fs-thin);
+        font-weight: var(--fw-bold);
+    }
+
+    .socialMedia{
+        font-size: 16px;
     }
 }
