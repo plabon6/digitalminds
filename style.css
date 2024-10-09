@@ -137,6 +137,11 @@ nav > a:not(:last-child){
     display: none;
 }
 
+.dskMenu{
+    display: Block;
+}
+
+
 /* Container CSS Here */
 
 .container{
@@ -980,7 +985,7 @@ footer a{
 
 @media only screen and (max-width: 480px){
     .width{
-        width: 400px;
+        width: 380px;
     }
 
     .mb-d-n{
@@ -995,7 +1000,7 @@ footer a{
 
     .logo{
         margin-right: 0;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     nav{
@@ -1014,6 +1019,14 @@ footer a{
         padding: 10px 15px;
     }
 
+    .right-hero button > i{
+        margin-left: 0;
+    }
+
+    .dskMenu{
+        display: none;
+    }
+
     .mbMenu{
         display: block;
     }
@@ -1027,7 +1040,7 @@ footer a{
     }
 
     .images{
-        width: 400px;
+        width: 360px;
         height: 500px;
     }
 
@@ -1085,7 +1098,7 @@ footer a{
 
     .girl{
         left: 0;
-        width: 400;
+        width: 370px;
     }
 
     /* Packages Responsive CSS */
@@ -1100,7 +1113,7 @@ footer a{
 
     iframe{
         margin-top: 50px;
-        width: 400px;
+        width: 370px;
         height: 220px;
     }
 
@@ -1136,6 +1149,7 @@ footer a{
     .topFooter{
         grid-template-columns: repeat(2, auto);
         justify-content: center;
+        row-gap: 50px;
     }
 
     /* Copyright Section Responsive CSS */
@@ -1150,6 +1164,7 @@ footer a{
     }
 
     .socialMedia{
-        font-size: 16px;
+        font-size: 25px;
+        margin-bottom: 15px;
     }
 }
