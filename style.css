@@ -124,6 +124,9 @@ nav > a:not(:last-child){
     cursor: pointer;
     border-radius: var(--br-normal);
 }
+.right-hero button > span{
+    display: inline;
+}
 
 .right-hero button > i{
     margin-left: 15px;
