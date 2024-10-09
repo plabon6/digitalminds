@@ -1084,6 +1084,8 @@ footer a{
 
     .bottom-course{
         grid-template-columns: auto;
+        justify-content: center;
+        row-gap: 50px;
     }
 
     /* Education Responsive CSS */
@@ -1122,6 +1124,7 @@ footer a{
     .courseCard{
         grid-template-columns: auto;
         justify-content: center;
+        row-gap: 50px;
     }
 
     /* Expert Teachers Responsive CSS */
@@ -1129,6 +1132,11 @@ footer a{
     .package{
         grid-template-columns: auto;
         justify-content: center;
+        row-gap: 50px;
+    }
+
+    .bg-blue{
+        margin-bottom: 0;
     }
 
     /* Subscribe Responsive CSS */
@@ -1148,7 +1156,7 @@ footer a{
 
     .topFooter{
         grid-template-columns: repeat(2, auto);
-        justify-content: center;
+        justify-content: flex-start;
         row-gap: 50px;
     }
 
