@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .width{
-    width: 1049px;
+    max-width: 1049px;
 }
 
 .hero{
@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6, p {
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
 }
 
@@ -139,6 +140,12 @@ nav > a:not(:last-child){
 
 .mbMenu{
     display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--br-normal);
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--clr-mute);
 }
 
 .dskMenu{
@@ -228,6 +235,10 @@ nav > a:not(:last-child){
     right: -80px;
 }
 
+.heroImage{
+    display: none;
+}
+
 .static{
     right: -20px;
     bottom: 90px;
@@ -280,6 +291,7 @@ nav > a:not(:last-child){
     border-radius: 0 0 20px 0;
     position: absolute;
     top: 0;
+    z-index: -1;
 }
 .lg-rtg{
     height: 650px;
@@ -667,7 +679,7 @@ iframe{
     align-items: center;
     width: 250px;
     box-shadow: 0 10px 15px #8080802f;
-    padding: 35px;
+    padding: 25px;
     background-color: var(--clr-light-text);
 }
 
@@ -947,6 +959,7 @@ footer a{
 
 .bottomFooter{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 25px 0;
     margin: 0 auto;
@@ -995,6 +1008,189 @@ footer a{
     }
 }
 
+/* Tablet Responsive CSS Here */
+
+@media only screen and (max-width: 768px){
+
+    /* Header Tab responsive CSS */
+    .mbMenu{
+        display: flex;
+    }
+
+    .width{
+        max-width: 700px;
+    }
+
+    .sm-rtg, .lg-rtg{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .right-hero a{
+        display: none;
+    }
+
+    .right-hero button{
+        padding: 10px 15px;
+        font-size: var(--fs-thin);
+    }
+    .right-hero button > i{
+        margin-left: 5px;
+    }
+    .logo{
+        margin-right: 0;
+    }
+
+    /* Hero Section Tab Responsive Here */
+
+    .left-container h1{
+        font-size: var(--fs-x);
+        margin-bottom: 10px;
+    }
+
+    .left-container p{
+        font-size: var(--fs-small);
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    .quote, .learn{
+        padding: 10px 25px;
+    }
+
+    .images{
+        display: none;
+    }
+
+    .heroImage{
+        max-width: 380px;
+        display: block;
+    }
+
+    /* Training Section Tablet Responsive CSS Here */
+    .course{
+        margin: 50px auto;
+    }
+
+    .top-course{
+        margin-bottom: 60px;
+    }
+
+    .top-course h5, .top-course h2, .top-course p{
+        text-align: center;
+    }
+
+    .top-course h2{
+        font-size: var(--fs-black);
+    }
+
+    .bottom-course{
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 70px;
+    }
+
+    /* Education Section Tab Responsive CSS Here */
+
+    .education{
+        margin: 20px auto;
+    }
+
+    .left-education{
+        display: none;
+    }
+
+    .mb-girl{
+        display: block;
+    }
+
+    .mb-girl img{
+        max-width: 380px;
+    }
+
+    .content hr{
+        width: 80px;
+        height: 5px;
+        margin-bottom: 25px;
+    }
+
+    .content h2{
+        font-size: var(--fs-black);
+        margin-bottom: 25px;
+    }
+
+    .content p{
+        margin-bottom: 25px;
+    }
+
+    /* Packages Section Tablet Responsive CSS Here */
+
+    .packages{
+        padding: 20px 0;
+    }
+
+    iframe{
+        width: 500px;
+        height: 250px;
+    }
+
+    /* Popular Course Tablet Responsive CSS Here */
+
+    .popular{
+        margin-bottom: 20px;
+    }
+
+    .courseCard{
+        padding: 40px 0;
+        column-gap: 40px;
+        width: 700px;
+        overflow-x: scroll;
+    }
+
+    /* Expert Teachers Tablet Responsive CSS Here */
+
+    .package{
+        width: 700px;
+        gap: 40px;
+        overflow-x: scroll;
+        padding-top: 30px;
+    }
+
+    .bg-blue{
+        margin-bottom: 0;
+    }
+
+    /* Subscribe Section Tablet Responsive CSS Here */
+
+    .subscribe{
+        padding: 60px;
+    }
+
+    .subContainer h2{
+        font-size: var(--fs-black);
+    }
+
+    form{
+        margin-top: 50px;
+    }
+
+    /* Footer Section Tablet Responsive CSS Here */
+
+    .topFooter{
+        grid-template-columns: repeat(3, auto);
+        row-gap: 50px;
+    }
+
+    .touch{
+        grid-column: span 2;
+    }
+}
+
+/* Mobile Responsive CSS Here */
+
 @media only screen and (max-width: 480px){
     .width{
         width: 380px;
@@ -1042,12 +1238,6 @@ footer a{
 
     .mbMenu{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: var(--br-normal);
-        width: 30px;
-        height: 30px;
-        border: 1px solid var(--clr-mute);
     }
 
     /* Container Image CSS Responsive */
@@ -1067,43 +1257,14 @@ footer a{
     }
 
     .images{
-        width: 360px;
-        height: 500px;
+       display: none;
     }
 
-    .student{
-        background: url(Images/Ellipse\ 23.svg);
-        background-position: 55px 35px;
-        background-repeat: no-repeat;
-        background-size: 300px;
-        left: 0px;
-        width: 370px;
-    }
-    
-    .static{
-        right: 60px;
-        top: 250px;
-        width: 150px;
-        -webkit-user-drag: none;
-    }
-    
-    .year{
-        display: none;
-    }
-    
-    .score{
-        display: none;
-    }
-    
-    .line{
-        left: 20px;
-        top: 400px;
-    }
-    
-    .fa-calendar{
-        padding: 10px;
-        top: 45px;
-        right: 25px;
+    .heroImage{
+        display: block;
+        min-width: 350px;
+        max-width: 380px;
+        margin-bottom: 60px;
     }
 
 
@@ -1177,6 +1338,7 @@ footer a{
     .courseCard{
         grid-template-columns: auto;
         justify-content: center;
+        width: auto;
         row-gap: 50px;
     }
 
@@ -1209,6 +1371,7 @@ footer a{
         grid-template-columns: auto;
         justify-content: center;
         row-gap: 50px;
+        width: auto;
     }
 
     /* Testimonials Responsive CSS Here */
